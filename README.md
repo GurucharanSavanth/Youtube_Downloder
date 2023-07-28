@@ -49,7 +49,10 @@ To download the video with the URL https://www.youtube.com/watch?v=dQw4w9WgXcQ, 
 
 python3 main.py
 
-1
+
+![Screenshot from 2023-07-28 16-01-53](https://github.com/GurucharanSavanth/Youtube_Downloder/assets/70633240/813118ed-445e-4659-b471-c82ac15d1f6b)
+
+![Screenshot from 2023-07-28 16-06-26](https://github.com/GurucharanSavanth/Youtube_Downloder/assets/70633240/f97b2586-3ed0-4d07-9d98-8241fe2639ca)
 
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
@@ -59,6 +62,7 @@ The script will then download the video to the download directory.
 ## Credits
 
 This script was created by Gurucharan.S.
+
 
 ## Updates
 
