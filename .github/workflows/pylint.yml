@@ -1,23 +1,25 @@
-name: Pylint
-on: [push]
+name: YouTube Video Downloader
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  download-video:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.8", "3.9", "3.10"]
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pylint
-        pip install pytube
-    - name: Analysing the code with pylint
-      run: |
-        pylint $(git ls-files '*.py')
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pip install pytube
+      - name: Download video
+        run: python download_youtube_video.py ${{ env.video_url }}
+
+  download-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pip install pytube
+      - name: Download playlist
+        run: python download_youtube_playlist.py ${{ env.playlist_url }} 
