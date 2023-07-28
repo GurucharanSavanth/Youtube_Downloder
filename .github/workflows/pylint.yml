@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: pip install pytube
       - name: Download video
-        run: python download_youtube_video.py ${{ env.video_url }}
+        run: python main.py ${{ env.video_url }}
 
   download-playlist:
     runs-on: ubuntu-latest
@@ -22,4 +22,4 @@ jobs:
       - name: Install dependencies
         run: pip install pytube
       - name: Download playlist
-        run: python download_youtube_playlist.py ${{ env.playlist_url }} 
+        run: python main.py ${{ env.playlist_url }} 
