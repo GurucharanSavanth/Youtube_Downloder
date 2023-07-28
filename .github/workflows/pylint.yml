@@ -19,7 +19,6 @@ jobs:
         pip install pylint
         pip install pytube
         pip install PySimpleGUI
-        pip install ThreadPoolExecutor
         pip install concurrent.futures
     - name: Analysing the code with pylint
       run: |
