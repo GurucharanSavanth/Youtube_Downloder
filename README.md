@@ -8,8 +8,12 @@ This is a simple Python script that allows you to download YouTube videos and pl
 * The pytube library
 
 ## Installation
-
+```
 pip install pytube
+pip install PySimpleGUI
+pip install ThreadPoolExecutor
+pip install concurrent.futures
+```
 
 
 ## Usage
@@ -19,6 +23,14 @@ python youtube_downloader.py
 The script will start by printing a menu with the following options:
 
 Enqueue video
+```
+Example: 
+inputing URL 
+1)  https://youtu.be/dQw4w9WgXcQ
+             (OR)
+           USE COMMA 
+2) https://youtu.be/dQw4w9WgXcQ , https://youtu.be/dQw4w9WgXcQ
+```
 Enqueue playlist
 Download the listed videos
 Exit
@@ -32,14 +44,26 @@ If you want to change the default download directory, you can set the download_p
 Example
 To download the video with the URL https://www.youtube.com/watch?v=dQw4w9WgXcQ, you would enter the following command:
 
-python youtube_downloader.py
+python main.py
+
 1
+
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+
 The script will then download the video to the download directory.
 
-Credits
+## Credits
+
 This script was created by Gurucharan.S.
 
+## Updates
 
+* The script has been optimized to download videos more efficiently.
+* The code has been documented to make it easier to understand.
+* The README.md file has been updated to reflect the latest changes.
 
-I hope this helps!
+## Known Issues
+
+* The script may not work on all versions of Python.
+* The script may not work on all videos.
