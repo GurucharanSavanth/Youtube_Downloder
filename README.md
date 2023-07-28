@@ -6,6 +6,9 @@ This is a simple Python script that allows you to download YouTube videos and pl
 
 * Python 3
 * The pytube library
+* PySimpleGUI
+* ThreadPoolExecutor
+*concurrent.futures
 
 ## Installation
 ```
@@ -18,7 +21,7 @@ pip install concurrent.futures
 
 ## Usage
 
-python youtube_downloader.py
+python3 main.py
 
 The script will start by printing a menu with the following options:
 
@@ -44,7 +47,7 @@ If you want to change the default download directory, you can set the download_p
 Example
 To download the video with the URL https://www.youtube.com/watch?v=dQw4w9WgXcQ, you would enter the following command:
 
-python main.py
+python3 main.py
 
 1
 
