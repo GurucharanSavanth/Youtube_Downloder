@@ -74,3 +74,5 @@ This script was created by Gurucharan.S.
 
 * The script may not work on all versions of Python.
 * The script may not work on all videos.
+
+## Donload direct executable  https://github.com/GurucharanSavanth/Youtube_Downloder/releases
