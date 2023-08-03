@@ -49,7 +49,7 @@ To download the video with the URL https://www.youtube.com/watch?v=dQw4w9WgXcQ, 
 
 python3 main.py
 
-
+## I have changed the gui part as it was giving problems loading, will get back to this GUI soon as it gets fixed . ETA IDK
 ![Screenshot from 2023-07-28 16-01-53](https://github.com/GurucharanSavanth/Youtube_Downloder/assets/70633240/813118ed-445e-4659-b471-c82ac15d1f6b)
 
 ![Screenshot from 2023-07-28 16-06-26](https://github.com/GurucharanSavanth/Youtube_Downloder/assets/70633240/f97b2586-3ed0-4d07-9d98-8241fe2639ca)
@@ -71,8 +71,17 @@ This script was created by Gurucharan.S.
 * The README.md file has been updated to reflect the latest changes.
 
 ## Known Issues
-
+* No progress bar it will run fully in background with default of 1 thread
 * The script may not work on all versions of Python.
 * The script may not work on all videos.
+
+# ToDo
+* Implement MultiThread ( Work in progress )
+* Use optimizing its dynamic thread allocation for downloding 2 types eg. Youtube video and playlist simultaniously .
+* Implement fail safe if the downlode gets intrupted needs providing pop up
+* Many more feature coming up StayTuned for more features to be added
+
+
+
 
 
