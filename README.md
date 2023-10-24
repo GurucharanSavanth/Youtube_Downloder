@@ -1,7 +1,6 @@
 # YouTube Downloader
 
 This is a simple Python script that allows you to download YouTube videos and playlists.
-## Donload direct executable  https://github.com/GurucharanSavanth/Youtube_Downloder/releases
 ## Requirements
 
 * Python 3
